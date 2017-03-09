@@ -1,0 +1,49 @@
+
+	@keyframes title {
+    0%  {background-color: grey; color: blue;} 
+    50%  {background-color: yellow; color: black;}
+    100% {background-color: red; color: grey;}
+	}
+	h2{
+		text-align: center;
+		animation: title 3s ease infinite;
+	}
+	h3{
+		position: relative;
+    	width: 130px;
+		animation: aniName 20s infinite;
+	}
+	@keyframes aniName{
+	from{left: -10px;color: white}
+	to{right: 300px;color: white}
+	0% { left: 0px; color: white; }
+    50% { left: 80%; color: red; background: grey; }
+    100% { left: 0px; }
+	}
+	}
+	.style-image img{
+	transition:all 0.5s ease-out; 
+	}
+	.style-image img{
+	height: 200px;
+	width: 250px;
+	}
+	.abc img{
+	width: 150px;
+	height: 150px;
+	border-radius: 70%;
+	position: relative;
+    top: -6px;
+    left: 0px;
+	}
+	#chat img{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	bottom: 0px;
+	right: 0px;
+	}
+	.style-image img:hover{
+	 border-radius: 50%;
+	transform:rotate(1deg);
+	}
