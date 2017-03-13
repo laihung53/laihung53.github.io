@@ -1,0 +1,29 @@
+.home{
+	position: absolute;
+	top: 213px;
+	right: 495px;
+	border: 2px solid;
+	font-size: 30px;
+	padding-right: 100px;
+	padding-left: 100px;
+	text-align: center;
+}
+.b2{
+	position: absolute;
+	top: 301px;
+    left: 393px;
+}
+.b3{
+	position: absolute;
+	top: 301px;
+    left: 754px;
+
+}
+.b4{
+	position: absolute;
+	    top: 301px;
+    right: 500px;
+}
+.pantu.pantu2 .pantu1{
+	position: relative;
+}
