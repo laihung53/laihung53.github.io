@@ -67,3 +67,10 @@
 	margin-top: 10px;
 	
 }
+.f2 img {
+	border:30px solid #fff !important;
+	cursor: pointer;
+}
+.f2 img:hover {
+    border: 30px solid #245050 !important; 
+}

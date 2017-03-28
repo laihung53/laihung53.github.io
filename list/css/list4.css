@@ -39,3 +39,21 @@ height: 400px;
 	text-align: center;
 	color: white;
 }
+.a1 ul li > .sub-menu{
+	position: absolute;
+	display: none;
+    height: 50px;
+    line-height: 50px;
+    background: #f7d7af;
+    text-align: center;
+    left: 335px;
+    top: 30px;
+    width: 50%;
+    border-radius: 5px;
+}
+.a1 ul li:hover .sub-menu{
+	display: block;
+}
+.a1 ul li a{
+	text-decoration: none;
+}
