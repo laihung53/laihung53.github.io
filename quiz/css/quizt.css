@@ -1,0 +1,11 @@
+#boss{
+	background-color: #1e90ff;
+}
+.boss1{
+	    background-color: gray;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    left: 185px;
+    top: 50px;
+}

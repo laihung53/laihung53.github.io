@@ -10,6 +10,8 @@
 	color:red;
 }
 .a1{
+
+	    background-image: url("../images/17rd.jpg" )!important;
 	height: 175px;
 	width: 
 }
@@ -73,4 +75,8 @@
 }
 .f2 img:hover {
     border: 30px solid #245050 !important; 
+}
+li{
+	font-size: 30px;
+	color: black !important;
 }

@@ -1,0 +1,47 @@
+#boss{
+	background-image: url(../image/lol.jpg);
+}
+
+input{
+	text-align: center;
+	
+}
+#boss2{
+	  /*  position: absolute;
+    left: 400px;*/
+    
+    border: 3px solid;
+    /*width: 500px;*/
+    height: auto;
+    border: 3px solid #692323;
+    font-size: 25px;
+    background-color: #b0fcf0;
+    /*text-align: center;*/
+   
+}
+.boss3{
+	    border: 3px solid gray;
+    padding-bottom: 5px;
+}
+.tieude{
+	text-align: center;
+	font-size: 40px;
+	color: green;
+}
+h3,div{
+	text-align: center;
+	color: #1200ff;
+}
+.leng{
+	width: 100px;
+	height: 30px;
+}
+h2{
+	text-align: center;
+}
+.style{
+	font-size: 25px;
+	color: blue;
+	border: 3px solid black;
+	background-color: green;	
+}

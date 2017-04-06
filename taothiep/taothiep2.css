@@ -1,0 +1,81 @@
+.t1{
+	animation: mymove 8s infinite;
+}
+@keyframes mymove{
+	0%   {top: -20px; right:100px; background: #db1111;}
+	25%  {top: -20px; right: 150px; background: #db1111;}
+	50%  {top: -20px; right: 200px; background: #db1111;}
+	75%  {top: -20px; right: 210px; background: #db1111;}
+	100% {top: 1000px; right: 230px; background: #db1111;}
+}
+.t3{
+	animation: mymovea 8s infinite;
+}
+@keyframes mymovea{
+	0%   {top: 155px; right:100px; background: #db1111;}
+	25%  {top: 155px; right: 150px; background: #db1111;}
+	50%  {top: 155px; right: 200px; background: #db1111;}
+	75%  {top: 155px; right: 210px; background: #db1111;}
+	100% {top: 1000px; right: 230px; background: #db1111;}
+}
+.t5{
+	animation: mymoveb 8s infinite;
+}
+@keyframes mymoveb{
+	0%   {top: 330px; right:100px; background: #db1111;}
+	25%  {top: 330px; right: 150px; background: #db1111;}
+	50%  {top: 330px; right: 200px; background: #db1111;}
+	75%  {top: 330px; right: 210px; background: #db1111;}
+	100% {top: 1000px; right: 230px; background: #db1111;}
+}
+.t8{
+	animation: mymovec 8s infinite;
+}
+@keyframes mymovec{
+	0%   {top: 550px; right:100px; background: #db1111;}
+	25%  {top: 550px; right: 150px; background: #db1111;}
+	50%  {top: 550px; right: 200px; background: #db1111;}
+	75%  {top: 550px; right: 210px; background: #db1111;}
+	100% {top: 1000px; right: 230px; background: #db1111;}
+}
+/* ben trai*/
+.t2{
+	animation: mymoved 8s infinite;
+}
+@keyframes mymoved{
+	0%   {top: -20px; left:100px; background: #db1111;}
+	25%  {top: -20px; left: 150px; background: #db1111;}
+	50%  {top: -20px; left: 200px; background: #db1111;}
+	75%  {top: -20px; left: 210px; background: #db1111;}
+	100% {top: 1000px; left: 230px; background: #db1111;}
+}
+.t4{
+	animation: mymovee 8s infinite;
+}
+@keyframes mymovee{
+	0%   {top: 155px; left:100px; background: #db1111;}
+	25%  {top: 155px; left: 150px; background: #db1111;}
+	50%  {top: 155px; left: 200px; background: #db1111;}
+	75%  {top: 155px; left: 210px; background: #db1111;}
+	100% {top: 1000px; left: 230px; background: #db1111;}
+}
+.t6{
+	animation: mymovef 8s infinite;
+}
+@keyframes mymovef{
+	0%   {top: 330px; left:100px; background: #db1111;}
+	25%  {top: 330px; left: 150px; background: #db1111;}
+	50%  {top: 330px; left: 200px; background: #db1111;}
+	75%  {top: 330px; left: 210px; background: #db1111;}
+	100% {top: 1000px; left: 230px; background: #db1111;}
+}
+.t7{
+	animation: mymoveg 8s infinite;
+}
+@keyframes mymoveg{
+	0%   {top: 505px; left:100px; background: #db1111;}
+	25%  {top: 505px; left: 150px; background: #db1111;}
+	50%  {top: 505px; left: 200px; background: #db1111;}
+	75%  {top: 505px; left: 210px; background: #db1111;}
+	100% {top: 1000px; left: 230px; background: #db1111;}
+}

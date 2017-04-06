@@ -1,0 +1,38 @@
+@keyframes title{
+0%{color: red;}
+10%{color: yellow;}
+40%{color: grey;}
+70%{color: white;}
+100%{color: blue;}
+}	
+h1{
+	text-align: center;
+	animation: title 20s ease infinite;
+}
+
+img{
+	width: 250px;
+	height: 250px;
+}
+
+.hover1 {
+	transform:rotateY(180deg);
+	position: absolute;
+}
+.hover1:hover {
+	backface-visibility:hidden;
+	transform:rotateY(0deg);
+}
+.hover2:hover{
+	transform:rotateY(0deg);
+}
+.hover1, .hover2{
+	transition:all 0.5s;
+	
+}
+#boss{
+	border: 2px solid gray;
+}
+/*body{
+	background-image: url(../image/naruto.jpg);
+}*/
