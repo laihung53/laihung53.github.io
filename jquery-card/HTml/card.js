@@ -1,11 +1,11 @@
- var clicks = 0; //counts how may picks have been made in each turn
-    var firstchoice; //stores index of first card selected
-    var secondchoice; //stores index of second card selected
+ var clicks = 0;
+    var firstchoice;
+    var secondchoice;
 
-    var match = 0; //counts matches made
-    var backcard = "../image/na.jpg"; //shows back of card when turned over
+    var match = 0;
+    var backcard = "../image/na.jpg";
 
-    var image = []; //array to store card images
+    var image = []; 
     image[0] = '../image/nar1.jpg';
     image[1] = '../image/nar1.jpg';
     image[2] = '../image/nar2.jpg';
