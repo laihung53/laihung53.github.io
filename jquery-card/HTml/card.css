@@ -1,9 +1,9 @@
 @keyframes title{
-0%{color: red;}
-10%{color: yellow;}
-40%{color: grey;}
-70%{color: white;}
-100%{color: blue;}
+0%{ background-color:yellow  ;color: red;}
+10%{background-color:grey  ;color: yellow;}
+40%{background-color:white  ;color: grey;}
+70%{background-color:blue  ;color: white;}
+100%{background-color:red  ;color: blue;}
 }	
 h1{
 	text-align: center;
@@ -31,8 +31,9 @@ img{
 	
 }
 #boss{
-	border: 2px solid gray;
+	text-align: center;
+	border: 2px solid red;
 }
-/*body{
+body{
 	background-image: url(../image/naruto.jpg);
-}*/
+}
