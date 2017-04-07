@@ -1,63 +1,69 @@
  var clicks = 0;
-    var firstchoice;
-    var secondchoice;
+ var firstchoice;
+ var secondchoice;
 
-    var match = 0;
-    var backcard = "../image/na.jpg";
+ var match = 0;
+ var backcard = "../image/na.jpg";
 
-    var image = []; 
-    image[0] = '../image/nar1.jpg';
-    image[1] = '../image/nar1.jpg';
-    image[2] = '../image/nar2.jpg';
-    image[3] = '../image/nar2.jpg';
-    image[4] = '../image/nar3.jpg';
-    image[5] = '../image/nar3.jpg';
-    image[6] = '../image/nar4.jpg';
-    image[7] = '../image/nar4.jpg';
-    image[8] = '../image/nar5.jpg';
-    image[9] = '../image/nar5.jpg';
+ function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
 
-   // image: function(array){
-   //    var counter = array.length, temp, index;
-   //    // While there are elements in the array
-   //    while (counter > 0) {
-   //        // Pick a random index
-   //        index = Math.floor(Math.random() * counter);
-   //        // Decrease counter by 1
-   //        counter--;
-   //        // And swap the last element with it
-   //        temp = array[counter];
-   //        array[counter] = array[index];
-   //        array[index] = temp;
-   //      }
-   //      return array;
-   //  },
+  return array;
+}
+var array  = new Array(); 
+array[0] = '../image/nar1.jpg';
+array[1] = '../image/nar2.jpg';
+array[2] = '../image/nar2.jpg';
+array[3] = '../image/nar1.jpg';
+array[4] = '../image/nar3.jpg';
+array[5] = '../image/nar3.jpg';
+array[6] = '../image/nar4.jpg';
+array[7] = '../image/nar4.jpg';
+array[8] = '../image/nar5.jpg';
+array[9] = '../image/nar5.jpg';
+array[10] = '../image/nar9.jpg';
+array[11] = '../image/nar9.jpg';
+array[12] = '../image/nar6.jpg';
+array[13] = '../image/nar6.jpg';
+array[14] = '../image/nar7.jpg';
+array[15] = '../image/nar7.jpg';
+array[16] = '../image/nar8.jpg';
+array[17] = '../image/nar8.jpg';
+var array = shuffle(array);
 
-    function choose(card) {
-            if (clicks == 2) {
-                return;
-            }
-            if (clicks == 0) {
-                firstchoice = card;
-                document.images[card].src = image[card];
-                clicks = 1;
-            } else {
-                clicks = 2;
-                secondchoice = card;
-                document.images[card].src = image[card];
-                timer = setInterval("check()", 1000);
-            }
-        }
 
-    function check() {
-    clearInterval(timer);
-    clicks = 0;
-    if (image[secondchoice] == image[firstchoice]) {
-        match++;
-        document.getElementById("matches").innerHTML = match;
-    } else {
-        document.images[firstchoice].src = backcard;
-        document.images[secondchoice].src = backcard;
-        return;
-    }
+function choose(card) {
+  if (clicks == 2) {
+    return;
+  }
+  if (clicks == 0) {
+    firstchoice = card;
+    document.images[card].src = array[card];
+    clicks = 1;
+  } else {
+    clicks = 2;
+    secondchoice = card;
+    document.images[card].src = array[card];
+    timer = setInterval("check()", 1000);
+  }
+}
+
+function check() {
+  clearInterval(timer);
+  clicks = 0;
+  if (array[secondchoice] == array[firstchoice]) {
+    match +=1 ;
+    document.getElementById("matches").innerHTML = match;
+  } else {
+    document.images[firstchoice].src = backcard;
+    document.images[secondchoice].src = backcard;
+    return;
+  }
 }

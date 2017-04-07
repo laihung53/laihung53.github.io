@@ -10,9 +10,9 @@ var answers = ["D","A","D","B","C"],
 
 function getCheckedValue(radio){
     var radios = document.getElementsByName(radio); 
-    for(var y=0; y<radios.length; y++){
-      if(radios[y].checked) 
-        return radios[y].value;
+    for(var i=0; i<radios.length; i++){
+      if(radios[i].checked) 
+        return radios[i].value;
       }
 };
 

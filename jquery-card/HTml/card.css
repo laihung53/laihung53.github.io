@@ -1,9 +1,9 @@
 @keyframes title{
-0%{ background-color:yellow  ;color: red;}
-10%{background-color:grey  ;color: yellow;}
-40%{background-color:white  ;color: grey;}
-70%{background-color:blue  ;color: white;}
-100%{background-color:red  ;color: blue;}
+0%{ /*background-color:yellow*/  /*;*/color: red;}
+10%{/*background-color:grey  ;*/color: yellow;}
+40%{/*background-color:white  ;*/color: grey;}
+70%{/*background-color:blue  ;*/color: white;}
+100%{/*background-color:red  ;*/color: blue;}
 }	
 h1{
 	text-align: center;
@@ -11,29 +11,29 @@ h1{
 }
 
 img{
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
+	border: 5px solid;
 }
 
-.hover1 {
+#boss a .hover1 {
 	transform:rotateY(180deg);
-	position: absolute;
 }
-.hover1:hover {
-	backface-visibility:hidden;
+#boss a .hover1:hover {
+	
+	transform:rotateX(0deg);
+}
+/*.hover2:hover{
 	transform:rotateY(0deg);
-}
-.hover2:hover{
-	transform:rotateY(0deg);
-}
-.hover1, .hover2{
-	transition:all 0.5s;
+}*/
+#boss > a >.hover1{
+	transition:all 5s;
 	
 }
 #boss{
 	text-align: center;
 	border: 2px solid red;
 }
-body{
+#boss{
 	background-image: url(../image/naruto.jpg);
 }
