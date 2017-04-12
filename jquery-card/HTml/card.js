@@ -1,7 +1,6 @@
  var clicks = 0;
  var firstchoice;
  var secondchoice;
-
  var match = 0;
  var backcard = "../image/na.jpg";
 
@@ -40,17 +39,17 @@ var array = shuffle(array);
 var arrayDaTinhDiem  = new Array();
 var indexDaTinhDiem =0;
 
-function startGame() {
-  timer = setInterval("logTimer()", 1000);
-}
-var timerValue = 0;
-function logTimer() {
-  timerValue = timerValue + 1;
-  document.getElementById("timerId").innerHTML = timerValue;
-  if(timerValue == 60) {
-    console.log("Neu so the chua duoc mo het thi thong bao ban da thua cuoc");
-  }
-}
+// function startGame() {
+//   timer = setInterval("logTimer()", 1000);
+// }
+// var timerValue = 0;
+// function logTimer() {
+//   timerValue = timerValue + 1;
+//   document.getElementById("timerId").innerHTML = timerValue;
+//   if(timerValue == 60) {
+//     console.log("Neu so the chua duoc mo het thi thong bao ban da thua cuoc");
+//   }
+// }
 // function displayTimer(a){
 //   var hours = Math.trunc(a/(60*60));
 //   var minutes = a % (60*60);
@@ -88,15 +87,16 @@ function check() {
   clicks = 0;
   if (array[secondchoice] == array[firstchoice]) {
     if(checkExist(array[secondchoice],arrayDaTinhDiem)) {
-      document.images[firstchoice].src = backcard;
-      document.images[secondchoice].src = backcard;
+      // document.images[firstchoice].src = backcard;
+      // document.images[secondchoice].src = backcard;
       return;
     }else {
       match +=1 ;
       document.getElementById("matches").innerHTML = match;
-      document.images[firstchoice].style.opacity = "0"
-      document.images[secondchoice].style.opacity = "0"
+      document.images[firstchoice].style.opacity = "0";
+      document.images[secondchoice].style.opacity = "0";
     }
+    if (match == 9) alert("Bạn Đã Chiến Thắng")
   } else {
     document.images[firstchoice].src = backcard;
     document.images[secondchoice].src = backcard;
