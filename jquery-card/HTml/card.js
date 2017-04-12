@@ -37,8 +37,26 @@ array[15] = '../image/nar7.jpg';
 array[16] = '../image/nar8.jpg';
 array[17] = '../image/nar8.jpg';
 var array = shuffle(array);
+var arrayDaTinhDiem  = new Array();
+var indexDaTinhDiem =0;
 
-
+function startGame() {
+  timer = setInterval("logTimer()", 1000);
+}
+var timerValue = 0;
+function logTimer() {
+  timerValue = timerValue + 1;
+  document.getElementById("timerId").innerHTML = timerValue;
+  if(timerValue == 60) {
+    console.log("Neu so the chua duoc mo het thi thong bao ban da thua cuoc");
+  }
+}
+// function displayTimer(a){
+//   var hours = Math.trunc(a/(60*60));
+//   var minutes = a % (60*60);
+//   var second = a % (60);
+//   console.log(hours +":"+ minutes + ":"+second);
+// }
 function choose(card) {
   if (clicks == 2) {
     return;
@@ -46,6 +64,7 @@ function choose(card) {
   if (clicks == 0) {
     firstchoice = card;
     document.images[card].src = array[card];
+    document.images[card].className += " choosed";
     clicks = 1;
   } else {
     clicks = 2;
@@ -54,16 +73,41 @@ function choose(card) {
     timer = setInterval("check()", 1000);
   }
 }
-
+function checkExist(value1, arrayExist) {
+  var exist = false;
+  for(var i=0;i<arrayExist.length;i++) {
+    if(value1 == arrayExist[i]) {
+      exist = true;
+      return exist;
+    }
+  }
+  return exist;
+}
 function check() {
   clearInterval(timer);
   clicks = 0;
   if (array[secondchoice] == array[firstchoice]) {
-    match +=1 ;
-    document.getElementById("matches").innerHTML = match;
+    if(checkExist(array[secondchoice],arrayDaTinhDiem)) {
+      document.images[firstchoice].src = backcard;
+      document.images[secondchoice].src = backcard;
+      return;
+    }else {
+      match +=1 ;
+      document.getElementById("matches").innerHTML = match;
+      document.images[firstchoice].style.opacity = "0"
+      document.images[secondchoice].style.opacity = "0"
+    }
   } else {
     document.images[firstchoice].src = backcard;
     document.images[secondchoice].src = backcard;
     return;
   }
 }
+function audio(){
+  var x = document.getElementById("audio");
+  x.play()
+};
+function hieuung(){
+  var x = document.getElementById("hieuung");
+  x.play()
+};  

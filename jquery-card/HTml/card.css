@@ -16,20 +16,20 @@ img{
 	border: 5px solid;
 }
 
-#boss a .hover1 {
+/*#boss a .hover1 {
 	transform:rotateY(180deg);
 }
 #boss a .hover1:hover {
 	
 	transform:rotateX(0deg);
 }
-/*.hover2:hover{
+.hover2:hover{
 	transform:rotateY(0deg);
-}*/
-#boss > a >.hover1{
-	transition:all 5s;
-	
 }
+#boss > a >.hover1{
+	transition:all 1s;
+	
+}*/
 #boss{
 	text-align: center;
 	border: 2px solid red;
@@ -37,3 +37,6 @@ img{
 #boss{
 	background-image: url(../image/naruto.jpg);
 }
+/*#boss a .hover1.choosed:hover {
+	transform:rotateY(180deg);
+}*/

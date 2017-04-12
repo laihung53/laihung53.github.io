@@ -20,3 +20,15 @@
 	color: blue;
 	
 }
+#thanhngang{
+	    position: relative;
+    top: 32px;
+width: 100%;
+height: 30px;
+background-color: #b32017;
+}
+#thanhngang p{
+text-align: center;
+font-size: 22px;
+color: white;
+}

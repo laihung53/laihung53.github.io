@@ -6,44 +6,46 @@
 </head>
 <body>
 	<h1>Memory Card Naruto</h1>
+  <button onClick = "startGame()"> start game</button>
+  <span id = "timerId"></span>
 	<div id="boss">
-       <a href="javascript:choose(0)"><img class="hover1" src="../image/na.jpg" ></a>
+       <a onClick="hieuung()" href="javascript:choose(0)"><img class="hover1" src="../image/na.jpg" ></a>
 
-       <a href="javascript:choose(1)"><img class="hover1" src="../image/na.jpg" ></a>
+       <a onClick="hieuung()" href="javascript:choose(1)"><img class="hover1" src="../image/na.jpg" ></a>
 
-       <a href="javascript:choose(2)"><img class="hover1" src="../image/na.jpg" ></a>
+       <a onClick="hieuung()" href="javascript:choose(2)"><img class="hover1" src="../image/na.jpg" ></a>
 
-       <a href="javascript:choose(3)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(3)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(4)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(4)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(5)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(5)"><img class="hover1" src="../image/na.jpg"></a>
         </br>
 
-       <a href="javascript:choose(6)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(6)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(7)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(7)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(8)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(8)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(9)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(9)"><img class="hover1" src="../image/na.jpg"></a>
      
-       <a href="javascript:choose(10)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(10)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(11)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(11)"><img class="hover1" src="../image/na.jpg"></a>
          <br>
 
-       <a href="javascript:choose(12)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(12)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(13)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(13)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(14)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(14)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(15)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(15)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(16)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(16)"><img class="hover1" src="../image/na.jpg"></a>
 
-       <a href="javascript:choose(17)"><img class="hover1" src="../image/na.jpg"></a>
+       <a onClick="hieuung()" href="javascript:choose(17)"><img class="hover1" src="../image/na.jpg"></a>
 
 
 
@@ -54,6 +56,8 @@
    <!-- <button onclick="myFunction()"></button> -->
    <script type="jquery-3.2.0.min.js"></script>
    <script src="card.js"> </script>
-   <audio src="../mp3/na.mp3" autoplay></audio>
+   <audio id="audio" src="../mp3/na.mp3" ></audio>
+   <button onclick="audio()" type="button">Play Audio</button>
+   <audio id="hieuung" src="../mp3/hieuung.mp3" ></audio>
 </body>
 </html>
