@@ -1,9 +1,28 @@
 <html>
 <head>
-	<title>Result</title>
+	<title>Thông Tin Thành Viên </title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="gogin.css">
+	<link rel="stylesheet" type="text/css" href="login1.css">
+	
 </head>
-<body>
-	<h1>Đăng Kí Thành Công</h1>
+<body action="login.html" style=" background-color: #efe1e1	">
+	<h1 id="demo" >Đăng Kí Thành Công</h1>
+	<div class="sty">
+	<button onclick="myFunction()">	Thông Tin Đăng Kí</button>
+	<button><a style="text-decoration:none ; color : white" href="file:///C:/Users/Administrator/Documents/GitHub/laihung53.github.io/login/login.html">Quay về trang đăng kí</a></button>
+	</div>
+	
+	<script>
+	var lin = window.location.search;
+	function myFunction(){
+		var str = decodeURIComponent(lin);
+		// var res = str.substring(3);
+		 var res = str.replace(/=|&/g , "</br>"); 
+		document.getElementById('demo').innerHTML= res;
+
+	};
+
+</script>
 </body>
 </html>

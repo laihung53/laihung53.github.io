@@ -12,13 +12,13 @@ form h2 {
   padding: 20px;
 }
  
-#hoten, #email , #pass, #dangnhap, #diachi, #phone, select {
+#name1, #email , #pass, #dangnhap, #diachi, #phone, #dte, select {
   margin: 40px 25px;
   width: 250px;
   display: block;
   border: none;
   padding: 10px 0;
-  border-bottom: solid 1px #1abc9c;
+  border-bottom: solid 2px #1abc9c;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
   background-position: -200px 0;
@@ -55,4 +55,13 @@ button:hover {
 }
 .long{
       padding-left: 85px;
+}
+.error{
+  margin: 40px 25px;
+    width: 250px;
+}
+h1{
+  text-align: center;
+  font-size: 35px;
+  color: #529494;
 }

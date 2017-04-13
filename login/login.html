@@ -4,43 +4,68 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="gogin.css">
 </head>
-<body style=" background-color: #d6d0d0;">
+<body style=" background-color: #efe1e1">
 	<div>
 		
-	<form action="login1.html">
-		<h2 style="color:red;">Đăng Kí Thành Viên</h2>
-		<input type="text" id="hoten" name="hoten" placeholder="Họ Và Tên"/></br>
+		<form action="login1.html" id="scrit" name="xuly" >
+			<h2 style="color:red;">Đăng Kí Thành Viên</h2>
+			<input type="text" id="name1" name="Name:" placeholder="Họ Và Tên" required />
+			<span class="error"></span></br>
+			<p></p>
+			<input type="email" id="email" name="Email:" placeholder="Email" required  >
+			<span class="error"></span></br>
+			<p></p>
+			<input type="password" id="pass" name="Password:" placeholder="Mật Khẩu" required /></br>
+			<p></p>
+			<input type="text" id="diachi" name="FromTo:" placeholder="Địa Chỉ" required /></br>
+			<p></p>
+			<input type="number" id="phone" name="Phone:" placeholder="Điện Thoại" required /></br>
+			<p></p>	
+			<input type="date" id="dte" name="Birtday:">
+			<!-- <select name="year" required>
+				<option>Chọn Năm Sinh....</option>
+				<option value="Năm 1991">1991</option>
+				<option value="Năm 1992">1992</option>
+				<option value="Năm 1993">1993</option>
+				<option value="Năm 1994">1994</option>
+				<option value="Năm 1995">1995</option>
+				<option value="Năm 1996">1996</option>
+				<option value="Năm 1997">1997</option>
+				<option value="Năm 1998">1998</option>
+				<option value="Năm 1999">1999</option>
+				<option value="Năm 2000">2000</option>
+			</select> -->
+			<div class="long">
+				<input  type="radio" name="Sex:" id="male" value="Male"><label for="Male" >Nam</label>
+				<input type="radio" name="Sex:" id="female" value="Female"><label for="Female">Nữ</label>
+			</div>
+		</br>
 		<p></p>
-		<input type="text" id="email" name="email" placeholder="Email" ></br>
-		<p></p>
-		<input type="text" id="pass" name="pass" placeholder="Mật Khẩu" /></br>
-		<p></p>
-		<input type="text" id="diachi" name="diachi" placeholder="Địa Chỉ" /></br>
-		<p></p>
-		<input type="text" id="phone" name="phone" placeholder="Điện Thoại" /></br>
-		<p></p>	
-		<select name="year">
-			<option>Chọn Năm Sinh....</option>
-			<option value="Năm 1991">1991</option>
-			<option value="Năm 1992">1992</option>
-			<option value="Năm 1993">1993</option>
-			<option value="Năm 1994">1994</option>
-			<option value="Năm 1995">1995</option>
-			<option value="Năm 1996">1996</option>
-			<option value="Năm 1997">1997</option>
-			<option value="Năm 1998">1998</option>
-			<option value="Năm 1999">1999</option>
-			<option value="Năm 2000">2000</option>
-		</select>
-		<div class="long">
-		<input  type="radio" name="gaden" id="male" value="male"><label for="male" >Nam</label>
-		<input type="radio" name="gaden" id="female" value="female"><label for="female">Nữ</label>
-		</div>
-	</br>
-	<p></p>
 		<button> Đăng Nhập</button>
 
 	</form>
-	</div>
+</div>
+<script src="jquery-3.2.0.min.js"></script>
+<script>
+$('#scrit').on('submit', function(){
+	var a = true;
+	if ($('#name').val().trim()==''){
+		$('#name').next('span').text('Chưa Nhập Tên');
+		a = false;
+	}
+	else{
+		$('#name').next('span').text('');
+	}
+	if ($('#email').val().match(/[\ W -] + @ ([\ w -] + \.) + [\ W -] +/) == '' ){
+		$('#email').next('span').text('Email Không hợp lệ');
+		a = false;
+	}
+	else{
+		$('#email').next('span').text('');
+	}
+	return a;
+});
+</script>
+
 </body>
 </html>
