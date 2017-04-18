@@ -18,7 +18,8 @@
 	function myFunction(){
 		var str = decodeURIComponent(lin);
 		// var res = str.substring(3);
-		 var res = str.replace(/=|&/g , "</br>"); 
+		 var res = str.replace(/&|\?/g , "</br>"); 
+		 res = res.replace(/=|\?/g , "");
 		document.getElementById('demo').innerHTML= res;
 
 	};

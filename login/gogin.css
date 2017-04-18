@@ -13,7 +13,7 @@ form h2 {
 }
  
 #name1, #email , #pass, #dangnhap, #diachi, #phone, #dte, select {
-  margin: 40px 25px;
+  margin: 0px 25px;
   width: 250px;
   display: block;
   border: none;

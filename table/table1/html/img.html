@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Danh sách học viên</title>
+  <link rel="stylesheet" type="text/css" href="table.css">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <h1>Danh sách học viên</h1></br>
+  <table  id="myTable"  class="tablesorter" border="1">
+   
+
+
+<script src="../js/jquery-3.2.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+   var img = "<img src='../img/1.jpg' />";
+   var img1 = "<img src='../img/2.jpg' />";
+   var img2 = "<img src='../img/3.jpg' />";
+   var img3 = "<img src='../img/4.jpg' />";
+   var img4 = "<img src='../img/5.jpg' />";
+   var dataSet=[
+[img, "Nguyễn văn a" , "Nam"," Nguyenvan@gmail.com","01637447283"],
+[img1, "Lê thị a" , "Nữ"," Leth@gmail.com","01637247283"],
+[img2, "Đỗ văn a" , "Nam"," Nguyenvan@gmail.com","01637447283"],
+[img3, "Bùi văn b" , "Nam"," Trinha@gmail.com","01637447283"],
+[img4, "Trịnh văn a" , "Nam"," Buiva@gmail.com","01637447283"]
+];  
+$(document).ready(function(){
+    $('#myTable').DataTable( {
+        data: dataSet,
+        columns: [
+            { title: "Avartar" },
+            { title: "Name" },
+            { title: "Sex" },
+            { title: "Email." },
+            { title: "PhoneNumber" }
+        ]
+    } );
+} );
+    </script>
+
+</body>
+</html>
