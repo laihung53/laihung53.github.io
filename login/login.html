@@ -4,42 +4,35 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="gogin.css">
 </head>
-<body style=" background-color: #efe1e1">
-	<div>
+<body >
+	<div id="boss">
 		
 		<form action="login1.html" id="scrit" name="xuly" >
-			<h2 style="color:red;">Đăng Kí Thành Viên</h2>
-			<input type="text" id="name1" name="Name:" placeholder="Họ Và Tên" required />
+			<h2>Đăng Kí Thành Viên</h2>
+			<label><b>UserName:</b></label></br>
+			<input class="same" type="text" id="name1" name="Name:" placeholder="Họ Và Tên" required />
 			<span class="error"></span></br>
 			<p></p>
-			<input type="email" id="email" name="Email:" placeholder="Email" required  >
+			<label><b>Email:</b></label></br>
+			<input class="same" type="email" id="email" name="Email:" placeholder="Email" required  >
 			<span class="error"></span></br>
 			<p></p>
-			<input type="password" id="pass" name="Password:" placeholder="Mật Khẩu" required /></br>
+			<label><b>PassWord:</b></label></br>
+			<input class="same" type="password" id="pass" name="Password:" placeholder="Mật Khẩu" required /></br>
 			<p></p>
-			<input type="text" id="diachi" name="FromTo:" placeholder="Địa Chỉ" required /></br>
+			<label><b>To From:</b></label></br>
+			<input class="same" type="text" id="diachi" name="FromTo:" placeholder="Địa Chỉ" required /></br>
 			<p></p>
-			<input  onkeypress='validate(event)'  id="phone" name="Phone:" placeholder="Điện Thoại" required /></br>
+			<label><b>PhoneNumber:</b></label></br>
+			<input  class="same" onkeypress='validate(event)'  id="phone" name="Phone:" placeholder="Điện Thoại" required /></br>
 			<p></p>	
-			<input type="date" id="dte" name="Birtday:">
-			<!-- <select name="year" required>
-				<option>Chọn Năm Sinh....</option>
-				<option value="Năm 1991">1991</option>
-				<option value="Năm 1992">1992</option>
-				<option value="Năm 1993">1993</option>
-				<option value="Năm 1994">1994</option>
-				<option value="Năm 1995">1995</option>
-				<option value="Năm 1996">1996</option>
-				<option value="Năm 1997">1997</option>
-				<option value="Năm 1998">1998</option>
-				<option value="Năm 1999">1999</option>
-				<option value="Năm 2000">2000</option>
-			</select> -->
+			<label><b>Birthday:</b></label></br>
+			<input class="same" type="date" id="dte" name="Birtday:">
+			<p></p>
 			<div class="long">
-				<input  type="radio" name="Sex:" id="male" value="Male"><label for="Male" >Nam</label>
-				<input type="radio" name="Sex:" id="female" value="Female"><label for="Female">Nữ</label>
+				<input  type="radio" name="Sex:" id="male" value="male"><label for="male" >Nam</label>
+				<input type="radio" name="Sex:" id="female" value="f  emale"><label for="female">Nữ</label>
 			</div>
-		</br>
 		<p></p>
 		<button> Đăng Nhập</button>
 

@@ -6,11 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="login1.css">
 	
 </head>
-<body action="login.html" style=" background-color: #efe1e1	">
+<body action="login.html">
 	<h1 id="demo" >Đăng Kí Thành Công</h1>
 	<div class="sty">
-	<button onclick="myFunction()">	Thông Tin Đăng Kí</button>
-	<button><a style="text-decoration:none ; color : white" href="file:///C:/Users/Administrator/Documents/GitHub/laihung53.github.io/login/login.html">Quay về trang đăng kí</a></button>
+	<button style="    margin: 0 10 0;" onclick="myFunction()">	Thông Tin Đăng Kí</button>
+	<button><a style="text-decoration:none ; color : #0c0c0c ;    margin: 0 10 0;" href="file:///C:/Users/Administrator/Documents/GitHub/laihung53.github.io/login/login.html">Quay về trang đăng kí</a></button>
 	</div>
 	
 	<script>
@@ -19,7 +19,7 @@
 		var str = decodeURIComponent(lin);
 		// var res = str.substring(3);
 		 var res = str.replace(/&|\?/g , "</br>"); 
-		 res = res.replace(/=|\?/g , "");
+		 res = res.replace(/=|\+/g , " ");
 		document.getElementById('demo').innerHTML= res;
 
 	};

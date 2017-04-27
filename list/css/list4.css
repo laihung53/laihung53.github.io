@@ -57,3 +57,6 @@ height: 400px;
 .a1 ul li a{
 	text-decoration: none;
 }
+#width{
+	max-width: 100%;
+}

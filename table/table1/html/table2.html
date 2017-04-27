@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>Danh sách Sản phẩm </title>
+  <link rel="stylesheet" type="text/css" href="table.css">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <h1>Danh sách sản phẩm </h1></br>
+  <table  id="myTable"  class="tablesorter" border="1">
+   
+
+
+<script src="../js/jquery-3.2.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+   var img = "<img src='../img/6plus.jpg' />";
+   var img1 = "<img src='../img/6p.jpg' />";
+   var img2 = "<img src='../img/8p.jpg' />";
+   var dataSet=[
+[img, "Iphone6" , "1234"," 16 Triệu","5"],
+[img1, "SamSung s7" , "3213"," 18 Triệu","4"],
+[img2, "HTC" , "4221"," 11 Triệu ","4"],
+];  
+$(document).ready(function(){
+    $('#myTable').DataTable( {
+        data: dataSet,
+        columns: [
+            { title: "Avartar" },
+            { title: "Name" },
+            { title: "Code" },
+            { title: "Monney" },
+            { title: "Number" }
+        ]
+    } );
+} );
+    </script>
+
+</body>
+</html>
