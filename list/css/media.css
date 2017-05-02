@@ -13,11 +13,21 @@ p{
 }
 .dmsp0 {
     text-align: center;
-    font-size: 30px;	
+    font-size: 28px;	
 }
 .hot{
 	position: absolute;
 	width: 20px	!important;
 	height: 20px !important;
 }
+#thanhngang::after { 
+    content: "";
+        top: 70px;
+    height: 2px;
+    width: 100px;
+    background: #b32017;
+    margin: 20px auto;
+    display: block;
+}
+
 }
