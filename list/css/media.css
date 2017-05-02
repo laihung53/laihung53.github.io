@@ -11,4 +11,13 @@ height: 100px;
 p{
 	font-size: 10px;
 }
+.dmsp0 {
+    text-align: center;
+    font-size: 30px;	
+}
+.hot{
+	position: absolute;
+	width: 20px	!important;
+	height: 20px !important;
+}
 }

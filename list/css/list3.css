@@ -33,7 +33,8 @@ transform:scale(1.05);}
 .f1{
 	    text-align: center;
 	    font-size: 35px;
-	    border: 2px solid;
+	    border-top: 2px solid;
+	    border-bottom: 2px solid;
 }
 .anh2{
 	position: relative;
