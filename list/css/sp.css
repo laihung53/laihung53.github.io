@@ -1,9 +1,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+/*.dodai {
+	border: 2px solid red;
+}*/
 .d2 img{
-width: 200px;
-height: 200px;
+    width: 250px;
+    height: 310px;
 }
 .d2{
 	width: 100%;
@@ -36,4 +39,8 @@ a:hover {
 }
 .title{
 	font-size: 20px !important;
+}
+body{
+	padding-right: 0px !important;
+	overflow: scroll !important;
 }

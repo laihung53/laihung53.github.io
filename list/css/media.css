@@ -29,5 +29,8 @@ p{
     margin: 20px auto;
     display: block;
 }
+.title{
+	font-size: 18px !important;
+}
 
 }
