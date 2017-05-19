@@ -1,0 +1,165 @@
+<html>
+<head>
+	<title>KanBan</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<style type="text/css">
+	.col-md-4{
+		border-right: 2px solid;
+		border-left: 2px solid;
+		background:#99ffcc;
+		border-radius: 3%;
+	}
+	.stye{
+		text-align: center;
+		padding-top: 30px;
+		display: none;
+	}
+	.stye1{
+		text-align: center;
+		padding-top: 30px;
+		display: none;
+	}
+	.stye2{
+		text-align: center;
+		padding-top: 30px;
+		display: none;
+	}
+	#thanhngang::after { 
+		content: "";
+		top: 70px;
+		height: 2px;
+		width: 180px;
+		background: #b32017;
+		margin: 20px auto;
+		display: block;
+	}
+	h3{
+		text-align: center;
+	}
+	h2{
+		text-align: center;
+	}
+	h2:hover{
+		cursor: pointer;
+		color: blue;
+	}
+	a:hover{
+		text-decoration:none
+	}
+	body{
+		background-color: rebeccapurple;
+	}
+	#hove{
+		position: relative;
+		float: right;
+		font-size: 30px;
+	}
+	</style>
+
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo center">KANBAN BOARD</a>
+		</div>
+	</nav>
+	<div class="row container">
+		<div  class="col-md-4">
+			<h3>Việc cần làm</h3>
+			<div id="thanhngang"></div>
+			<h2 id="onclic"><b>+</b></h2>
+			<div>
+				<p class="stye">
+					<input id="thongbao" type="text">
+					<button class="button">Thêm việc cần làm</button>
+				</p>
+			</div>
+			<div class="parent">
+				<div class="collection sorted-list"></div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+			<h3>Đang làm</h3>
+			<div id="thanhngang"></div>
+			<h2 id="onclic0"><b>+</b></h2>
+			<div>
+				<p class="stye1">
+					<input id="thongbao1" type="text">
+					<button class="button1">Thêm Sự Kiện đang làm</button>
+				</p>
+			</div>
+			<div class="parent1">
+				<div class="collection sorted-list"></div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<h3>Hoàn Thành</h3>
+			<div id="thanhngang"></div>
+			<h2 id="onclic1"><b>+</b></h2>
+			<div>
+				<p class="stye2">
+					<input id="thongbao2" type="text">
+					<button class="button2">Việc hoàn thành</button>
+				</p>
+			</div>
+			<div class="parent2">
+				<div class="collection sorted-list"></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$(document).ready(function(){
+		if ($("#onclic").click(function(){
+			$(".stye").css("display","block");}))
+		{
+			$(document).on("click", ".button", function() {
+				var text = $("#thongbao").val();
+				if (text != "") {
+					$(".parent .collection").append('<div class="vcl"><a href="#" class="collection-item">'+text+ '<span id="hove">&times;</span>' +'</a></div>');
+					sortList();
+				}
+			});
+		}
+		if ($("#onclic0").click(function(){
+			$(".stye1").css("display","block");
+		})) {
+			$(document).on("click", ".button1", function() {
+				var text = $("#thongbao1").val();
+				if (text != "") {
+					$(".parent1 .collection").append('<div class="vcl"><a href="#" class="collection-item">'+text+ '<span id="hove">&times;</span>' +'</a></div>');
+					sortList();
+				}
+			});
+		};
+		if ($("#onclic1").click(function(){
+			$(".stye2").css("display","block");
+		})) {
+			$(document).on("click", ".button2", function() {
+				var text = $("#thongbao2").val();
+				if (text != "") {
+					$(".parent2 .collection").append('<div class="vcl"><a href="#" class="collection-item">'+text+ '<span id="hove">&times;</span>' +'</a></div>');
+					sortList();
+				}
+			});
+		};
+	});
+
+function sortList() {
+	$( ".sorted-list" ).sortable({
+		connectWith: ".sorted-list"
+	});
+}
+$(document).on("click", "#hove", function() {
+	$(this).parent().remove();
+});
+
+</script>
+</body>
+</html>
