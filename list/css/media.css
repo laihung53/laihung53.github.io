@@ -13,7 +13,7 @@ p{
 }
 .dmsp0 {
     text-align: center;
-    font-size: 28px;	
+    font-size: 25px;	
 }
 .hot{
 	position: absolute;
@@ -32,5 +32,8 @@ p{
 .title{
 	font-size: 18px !important;
 }
-
+.dodai img{  
+	width: 80px;
+	height: 100px;
+}
 }

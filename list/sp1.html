@@ -1,0 +1,356 @@
+<html>
+<head>
+	<title>Chi Tiết Sản Phẩm </title>
+	 <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/sp.css">
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/section.css">
+      <link rel="stylesheet" type="text/css" href="css/menu.css">
+      <link rel="stylesheet" type="text/css" href="css/media2.css">
+      <link rel="stylesheet" type="text/css" href="css/media.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/sp1.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+<body>
+	 <nav class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 hidden-xs">
+              <span class="nav-text" style="padding-left:28 px; border-top: 10px solid black;">
+                <i class="fa fa-phone" aria-hidden="true"></i><label>01638655233</label>
+                <i class="fa fa-envelope" aria-hidden="true"></i> <label>laihung53@gmail.com</label></span>
+              </div>
+              <div class="col-sm-4 text-center">
+                <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <!-- <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a> -->
+                <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <form class="form-inline"> 
+                  <ul class="nav navbar-nav navbar-right bdr">
+
+                    <li><a style="color: #00bcd4;" href="#" data-toggle="modal" data-target="#at-login"><i class="fa fa-user" aria-hidden="true"></i>Đăng Nhập</a></li>
+
+
+
+                    <li ><a style="color: #00bcd4;" href="#" data-toggle="modal" data-target="#at-signup"><i class="fa fa-id-card" aria-hidden="true"></i>Đăng ký</a></li>
+                  </ul>
+                </form>
+
+              </div><!--/.nav-collapse -->
+            </div>
+          </div>
+        </nav>   <!--TOP-NAVBAR-END-->
+
+        <!-- login -->
+
+        <div class="blue-bg-nav">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <section class="at-login-form">
+                  <!-- MODAL LOGIN -->
+                  <div class="modal fade" id="at-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="modal-body">
+                          <button class="btn-fb"> <i class="fa fa-fw fa-facebook pull-left" aria-hidden="true"></i>
+                            Đăng Nhập Facebook </button> <br>  
+                            <button class="btn-gp"> <i style="color:red" class="fa fa-fw fa-google-plus pull-left" aria-hidden="true"></i>
+                              Đăng Nhập Google </button> <br>  
+                              <div class="signup-or-separator">
+                                <span class="h6 signup-or-separator--text">Hoặc</span>
+                                <hr>
+                              </div>
+                              <form>
+                                <div class="form-group">
+                                  <input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                  <input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+                                </div>
+                                <div class="row"> 
+                                  <div class="col-md-6">
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox"> Ghi Nhớ.
+                                      </label>
+                                    </div>  
+                                  </div>
+                                  <div class="col-md-4 col-md-offset-2">  
+                                    <p class="frgt-pswd"   data-toggle="modal" data-dismiss="modal"  data-target="#at-reset-pswd">  Quên mật khẩu ?</p>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn-lgin">Đăng Nhập</button>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <div class="row"> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- MODAL LOGIN ENDS -->
+                      <!-- MODAL SIGNUP -->
+                      <div class="modal fade" id="at-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            </div>
+                            <div class="modal-body">
+                              <button class="btn-fb"> <i class="fa fa-fw fa-facebook pull-left" aria-hidden="true"></i>
+                                Đăng Nhập Facebook  </button> <br>  
+                                <button class="btn-gp"> <i style="color:red" class="fa fa-fw fa-google-plus pull-left" aria-hidden="true"></i>
+                                  Đăng Nhập Google  </button> <br>  
+                                  <div class="signup-or-separator">
+                                    <span class="h6 signup-or-separator--text">or</span>
+                                    <hr>
+                                  </div>
+                                  <button type="submit" class="btn-lgin" data-toggle="modal"  data-dismiss="modal" data-target="#at-signup-filling">Đăng ký với Email</button> <hr> 
+                                </div>
+                                <div class="modal-footer">
+                                  <div class="row"> 
+                                    <div class="col-md-6">
+                                      <p class="ta-l">Bạn đã là thành viên? </p>
+                                    </div>  
+                                    <div class="col-md-4 col-md-offset-2">  
+                                      <button class="btn-gst"  data-toggle="modal"  data-dismiss="modal" data-target="#at-login">Đăng Nhập</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- MODAL SIGNUP FORM FILLING -->
+                          <div class="modal fade" id="at-signup-filling" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Đăng Nhập <a href="#">Facebook</a>  Hoặc <a href="#">Google</a></p>
+                                  <div class="signup-or-separator">
+                                    <span class="h6 signup-or-separator--text">Hoặc</span>
+                                    <hr>
+                                  </div>
+                                  <form>
+                                    <div class="form-group">
+                                      <input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="Full Name">
+                                    </div>  
+                                    <div class="form-group">
+                                      <input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="password" class="form-control-form " id="exampleInputPasswordpas" placeholder="Password">
+                                    </div>
+
+                                    <div class="row"> 
+                                      <div class="col-md-12"> 
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox"> 
+                                            Tôi đồng ý với Điều khoản.
+                                          </label>
+                                        </div>
+                                      </div>      
+                                    </div>
+                                    <button type="submit" class="btn-lgin">Đăng Ký</button>
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <div class="row"> 
+                                    <div class="col-md-6">
+                                      <p class="ta-l">Bạn đã là thành viên? </p>
+                                    </div>  
+                                    <div class="col-md-4 col-md-offset-2">  
+                                      <button class="btn-gst"  data-toggle="modal"  data-dismiss="modal" data-target="#at-login">Đăng Nhập</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- MODAL SIGNUP FORM FILLING -->
+                          <!-- MODAL FORGOT PASSWORD -->
+                          <div class="modal fade" id="at-reset-pswd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                    <p> 
+                                      Nhập địa chỉ email liên kết với tài khoản của bạn và chúng tôi sẽ gửi email cho bạn một liên kết để đặt lại mật khẩu của bạn. </p>
+                                      <div class="form-group">
+
+                                        <input type="email" class="form-control-form " id="exampleInputEmaillog" placeholder="Email">
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- MODAL HELP -->
+                            <div class="modal fade" id="at-helping" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="form-group">
+                                        <input type="text" class="form-control-form " id="exampleInputEmaillog" placeholder="Enter Your Searches ">
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <div class="row"> 
+                                      <button class="btn-gst"  data-toggle="modal"  data-dismiss="modal" >Send areset Link</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                  </div
+
+
+                  <!--====================== NAVBAR MENU START===================-->
+
+
+                  <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#"><img src=""></a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar" >
+                        <ul class="nav navbar-nav navbar-left">
+                          <li class=""><a style="font-size:20px;" href="#"><i class="fa fa-home" aria-hidden="true"></i>Trang Chủ</a></li>
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sản Phẩm <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Hàng Mới</a></li>
+                              <li><a href="#">Quần Áo Nam </a></li>
+                              <li><a href="#">Quần Áo Nữ</a></li>
+                              <li><a href="">Giầy Nam</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Giá Tốt Hôm Nay</a></li>
+                          <li><a href="#">Hàng Đồng Phục</a></li>
+                          <li><a href="#">Bộ Sưu Tập</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                          <div class="input-group">        
+                            <div class="input-group-btn">
+                              <button class="btn btn-default-1" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search">
+                          </div>
+
+                          <span class="cart-heart  hidden-sm hidden-xs"> 
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                          </span> 
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu -->
+  <div class="container">
+  	<a href="">Áo Sơ Mi Nam</a>
+  	<span>></span>
+  	<span>Áo sơ mi Bamboo tay ngắn A1MN438T2-VNIN001-1902-N</span>
+  	<div class="row">
+  <div class="col-xs-6">
+  	
+  </div>
+  <div class="col-xs-6">.col-xs-6</div>
+</div>
+  </div>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h4 class="title">Chứng Nhận</h4>
+        <p>Giấy Chứng nhận đăng ký kinh doanh số ..... do Sở Kế hoạch Đầu tư .... cấp.</p>
+        <ul class="social-icon">
+          <a href="#"><img src="images/boc.png"></a>
+          <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <!--  <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+          <!-- <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a> -->
+          <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+          <!-- <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a> -->
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h4 class="title">THÔNG TIN CẦN THIẾT</h4>
+        <span class="acount-icon">          
+          <a href="#"><i class="fa fa-heart" aria-hidden="true"> Danh Sách</i></a>
+          <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"> Giỏ Hàng</i></a>
+          <a href="#"><i class="fa fa-user" aria-hidden="true"> Hồ Sơ</i></a>           
+        </span>
+      </div>
+      <div class="col-sm-3">
+        <h4 class="title">ĐĂNG KÝ EMAIL</h4>
+        <span>Nhận tin nhắn khuyến mãi và ưu đãi hấp dẫn.</span>
+        <p></p>
+        <form action="" method="post" class="subscriber_form" id="subscriber_form" accept-charset="utf8">
+          <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Email của bạn">
+          <button type="submit">Đăng ký</button>
+        </form>
+
+      </div>
+      <div class="col-sm-3">
+        <h4 class="title">HỖ TRỢ THANH TOÁN</h4>
+        <ul class="payment">
+          <li><a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i></a></li>            
+          <!-- <li><a href="#"><i class="fa fa-paypal" aria-hidden="true"></i></a></li> -->
+          <li><a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row text-center"> © 2017. Made with VN.</div>
+  </div>
+</footer>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
