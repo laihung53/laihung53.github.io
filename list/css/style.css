@@ -232,7 +232,9 @@ border: 1px solid #000;
 border-radius: 0px;
 background-color: transparent;
 }
-
+.nav > li > a {
+    padding: 15px 20px !important;
+}
  .at-login-form .ta-l
 {
     text-align:left;

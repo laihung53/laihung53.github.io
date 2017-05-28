@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	 <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
 	<style type="text/css">
 	.col-md-4{
 		border-right: 2px solid;
@@ -112,6 +113,15 @@
 			</div>
 		</div>
 	</div>
+<div class="cd-popup" role="alert">
+	<div class="cd-popup-container">
+		<p style="font-size:20px">Bạn Muốn Xóa Công Việc Này</p>
+		<ul class="cd-buttons">
+			<li><a class="remove1" href="#0">Yes</a></li>
+			<li><a class="remove2" href="#0">No</a></li>
+		</ul>
+	</div> 
+</div> 
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
@@ -156,8 +166,35 @@ function sortList() {
 		connectWith: ".sorted-list"
 	});
 }
-$(document).on("click", "#hove", function() {
-	$(this).parent().remove();
+$(document).on("click", ".remove1", function() {
+	if ($(document).ready(function(){
+	})) {
+		$('#hove').parent().remove();
+	};
+});
+  $(document).ready(function(){
+	$(document).on('click', "#hove",function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+	});
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.remove1') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.remove2') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.cd-popup').removeClass('is-visible');
+	    }
+    });
 });
 
 </script>
